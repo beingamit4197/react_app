@@ -11,6 +11,9 @@ export default function Product(props){
                 <button type="button" className="btn btn-sm btn-warning">{props.product.quantity}</button>
                 <button type="button" className="btn btn-sm btn-success">+</button>
             </div>
+            <div className="col-4">
+                <button className="btn btn-lg btn-outline-secondary">{props.product.quantity * props.product.price}</button>
+            </div>
         </div>
     )
 }
